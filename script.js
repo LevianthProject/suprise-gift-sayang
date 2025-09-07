@@ -8,7 +8,7 @@ const backgroundMusic = document.getElementById('backgroundMusic');
 document.addEventListener('DOMContentLoaded', function() {
     createFloatingHearts();
     setupGiftBox();
-    startCountdown();
+    // startCountdown();
 });
 
 // Create floating hearts animation
@@ -382,41 +382,41 @@ function startCountdown() {
 }
 
 // Modify openGiftBox to check countdown (countdown script)
-function openGiftBox() {
-    const currentYear = new Date().getFullYear();
-    let targetDate = new Date(currentYear, 8, 6, 9, 4, 0); // September 8, 00:00
+// function openGiftBox() {
+//     const currentYear = new Date().getFullYear();
+//     let targetDate = new Date(currentYear, 8, 6, 9, 4, 0); // September 8, 00:00
 
-    // If current date is after September 8, set to next year
-    if (new Date() > targetDate) {
-        targetDate.setFullYear(currentYear + 1);
-    }
+//     // If current date is after September 8, set to next year
+//     if (new Date() > targetDate) {
+//         targetDate.setFullYear(currentYear + 1);
+//     }
 
-    const timeRemaining = getTimeRemaining(targetDate);
+//     const timeRemaining = getTimeRemaining(targetDate);
 
-    if (timeRemaining.total > 0) {
-        // Show message that it's not time yet
-        showWaitingMessage();
-        return;
-    }
+//     if (timeRemaining.total > 0) {
+//         // Show message that it's not time yet
+//         showWaitingMessage();
+//         return;
+//     }
 
-    // Proceed with opening the box
-    const giftBox = document.getElementById('giftBox');
-    const welcomeScreen = document.getElementById('welcomeScreen');
-    const surpriseContent = document.getElementById('surpriseContent');
+//     // Proceed with opening the box
+//     const giftBox = document.getElementById('giftBox');
+//     const welcomeScreen = document.getElementById('welcomeScreen');
+//     const surpriseContent = document.getElementById('surpriseContent');
 
-    // Add opening animation class
-    giftBox.classList.add('opening');
+//     // Add opening animation class
+//     giftBox.classList.add('opening');
 
-    // Play background music
-    playBackgroundMusic();
+//     // Play background music
+//     playBackgroundMusic();
 
-    // Wait for animation then show surprise content
-    setTimeout(() => {
-        welcomeScreen.classList.remove('active');
-        surpriseContent.classList.add('active');
-        showSection(1);
-    }, 1000);
-}
+//     // Wait for animation then show surprise content
+//     setTimeout(() => {
+//         welcomeScreen.classList.remove('active');
+//         surpriseContent.classList.add('active');
+//         showSection(1);
+//     }, 1000);
+// }
 
 
 
@@ -562,3 +562,4 @@ document.addEventListener('click', function(e) {
 
 
 });
+
