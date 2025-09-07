@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise untuk Sayangku ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="stars"></div>
+    <div class="hearts-container"></div>
+
+    <div class="main-container">
+        <div class="welcome-screen active" id="welcomeScreen">
+            <h1 class="welcome-title">Hai Sayang! ❤️</h1>
+            <p class="welcome-text">Ada kejutan spesial untukmu...</p>
+            <div class="gift-box" id="giftBox">
+                <div class="box-lid"></div>
+                <div class="box-base"></div>
+                <div class="ribbon-horizontal"></div>
+                <div class="ribbon-vertical"></div>
+                <div class="bow">
+                    <div class="bow-left"></div>
+                    <div class="bow-right"></div>
+                    <div class="bow-center"></div>
+                </div>
+            </div>
+            <div id="countdownTimer" class="countdown-timer"></div>
+            <p class="click-instruction">Klik kotak hadiah untuk membuka kejutan! 🎁</p>
+        </div>
+
+        <div class="surprise-content" id="surpriseContent">
+            <div class="content-section active" id="section1">
+                <h2 class=" section-title">Satu Tahun Bersamamu ❤️</h2>
+                <div class="love-quote">
+                    <p>"Satu tahun yang lalu, hidup ku berubah ketika aku bertemu denganmu. Kamu bukan hanya kekasih,
+                        tapi juga sahabat terbaik, rumah ternyaman, dan masa depan terindah yang pernah ku bayangkan."
+                        <br>
+                        Telah lebih dari 1 tahun kita telah bersama dengan banyak kenangan indah dan kenangan sulit,
+                        namun jika itu bersama kamu maka aku bisa bertahan dari segala apapun!
+                    </p>
+                </div>
+                <button class="next-btn" onclick="nextSection()">Lanjut ❤️</button>
+            </div>
+
+            <div class="content-section" id="section2">
+                <h2 class=" section-title">Kenangan Terindah Kita</h2>
+                <div class="memory-grid">
+                    <div class="memory-card">
+                        <div class="memory-placeholder">
+                            <p>📸</p>
+                            <span>Foto kencan pertama kita sayang lihat disini!</span>
+                            <button class="open-popups" data-lightbox="1">Open Me</button>
+                        </div>
+                    </div>
+                    <div class="memory-card">
+                        <div class="memory-placeholder">
+                            <p>💕</p>
+                            <span>Saat pertama bilang "I love you"</span>
+                        </div>
+                        <button class="open-popups" data-lightbox="2">Open Me</button>
+
+                    </div>
+                    <div class="memory-card">
+                        <div class="memory-placeholder">
+                            <p>🌟</p>
+                            <span>Liburan bersama yang tak terlupakan</span>
+                        </div>
+                        <button class="open-popups" data-lightbox="3">Open Me</button>
+
+                    </div>
+                    <div class="memory-card">
+                        <div class="memory-placeholder">
+                            <p>🎉</p>
+                            <span>Kenangan terindah yang kita miliki bersama!</span>
+                        </div>
+                        <button class="open-popups" data-lightbox="4">Open Me</button>
+
+                    </div>
+                </div>
+                <p class="memory-note">Kenang terindah kita semua ada disini sayang ❤️</p>
+                <button class="next-btn" onclick="nextSection()">Lanjut ❤️</button>
+            </div>
+
+            <div class="content-section" id="section3">
+                <h2 class=" section-title">Janji dan Harapan Kita Bersama</h2>
+                <div class="promises-container">
+                    <div class="promise-item">
+                        <div class="promise-icon">💖</div>
+                        <p>"Aku tidak hanya ingin berjanji tapi aku akan terus mengusahakan apapun untuk selalu
+                            mencintai kamu dengan sepenuh hati dan ragaku, waluaapun dikala sedih dan senang kita aku
+                            akan tetap mencintai kamu sepenuh hati 💖"</p>
+                    </div>
+                    <div class="promise-item">
+                        <div class="promise-icon">🤝</div>
+                        <p>"Saling membantu untuk bertahan demi menghadapi segala tantangan ya? kita harus saling
+                            menguatkan terus demi hubungan kita! 💖"</p>
+                    </div>
+                    <div class="promise-item">
+                        <div class="promise-icon">🌈</div>
+                        <p>"Mimpi kita tidak hanya berhenti sampai disini, aku ingin membangun masa depan yang indah,
+                            penuh cinta dan kebahagiaan bersama kamu sayang 💖"</p>
+                    </div>
+                    <div class="promise-item">
+                        <div class="promise-icon">♾️</div>
+                        <p>"Cinta kita akan terus tumbuh dan saling mengisi satu sama lain seiring berjalannya waktu dan
+                            tanpa batas waktu 💖"</p>
+                    </div>
+                </div>
+                <button class="next-btn" onclick="nextSection()">Lanjut ❤️</button>
+            </div>
+
+            <div class="content-section" id="section4">
+                <h2 class=" section-title">Pesan Cinta Untukmu</h2>
+                <div class="final-message">
+                    <div class="heart-big">💝</div>
+                    <p class="main-message">
+                        "Terima kasih telah menemaniku dalam senang dan duka selama lebih dari satu tahun ini sayang,
+                        semua kenangan kita akan selalu dihati walaupun banyak luka tetapi kita selalu berusaha untuk
+                        memperbaiki dan juga mengobati bersama, untuk kamu disaat ini membaca surat ini aku memiliki
+                        pesan yang aku mau ingat selama nya dan semua pesan ini murni dari lubuk hatiku terdalam "
+                    </p>
+                    <p class="sub-message">
+                        "Di hari anniversary kita yang pertama ini walaupun telah melewati satu bulan dimana disaat satu
+                        bulan ini adalah cobaan terberat kita selama menjalani hubungan ini bukan sayang? aku tau bahwa
+                        semuanya itu tidaklah mudah untuk bisa membangun hubungan ini dan aku yakin kamupun sebenarnya
+                        tidak ingin ada kata pisah dalam kebersamaan kita bukan sayang? Seberat apapun masalah
+                        dikehidupan kita, sesulit apapun keadaan maka kita saling membantu untuk mengeratkan dan
+                        memperbaiki segala hal untuk masa depan kita bersama, benar bukan sayangku?, aku ingin kamu tahu
+                        bahwa
+                        cintaku padamu akan terus tumbuh setiap detiknya. Kamu adalah segalanya bagiku
+                        dan aku tidak sabar untuk menjalani ribuan hari dan bahkan jutaan tahun lagi bersamamu asalkan
+                        bersama kamu aku bisa, tanpa kamu aku bukan apa apa dan tidak bisa apa apa sayang, perjalanan
+                        kita akan semakin berat namun jangan takut dan genggam tangan aku untuk bisa saling kerjasama
+                        dan melindungi hubungan ini, jika kamu lelah memperjuangkannya maka duduklah disampingku dan
+                        tunggulah aku akan datang membawakan bunga kepadamu pada hari anniversary kita yang ke 13bulan
+                        dan bunga ini akan menjadi tanda seberapa lama aku akan mencintai kamu dan jika bunga ini layu
+                        maka disaat itulah cintaku habis dan jika tidak maka disitulah cintaku abadi bersamamu.❤️"
+                        <br>
+
+                        "Sayang kamu ingatkan janji kita dan keinginan kita disaat kita ketemu saat itu yang dimana kita
+                        saling bilang jangan pernah ninggalin hubungan ini? Aku tau betapa beratnya saat saat kita ini
+                        dimasa ini tetapi jangan lupa juga bahwa kita memiliki kenangan terindah yang tidak bisa
+                        digantikan walaupun hanya sesaat kenangan tersebut namun sangat abadi dalam hati dan jiwa kita
+                        bersama, Aku ingin kita berjuang lagi dan bersama dan pesan ini berasal dari keinginan hatiku
+                        untuk bisa bersama hatimu dengan ketulusan sepenuh hati,"
+                        <br>
+
+                        "I love you sayang ke 13 bulan ini, maaf jika memang terlambat untuk merayakan anniversary kita
+                        namun lebih baik terlambat daripada tidak sama sekali kan? tidak terlalu terlambat juga untuk
+                        bisa terus merayakan karena sejujurnya setiap hari bersama kamu itu adalah suatu perayaan
+                        dikehidupan aku karena kamu adalah hadiah terbaik, terindah, termanis dari Tuhan yang pernah aku
+                        dapatkan selama masa hidupku"
+                        <br>
+
+                        "Nabilla ku tersayang, aku Ghaza akan berjanji dan mengusahakan apapun untuk membuat kita tetap
+                        bersama ❤️"
+                        <br>
+
+                        Selamat hari ulang tahun kita sayangku tercinta termanis dan terlucunya aku ❤️
+                    </p>
+                    <div class="signature">
+                        <p>Dengan cinta yang tak terbatas untuk kamu wahai cintaku,</p>
+                        <p class="lover-name">❤️ dari Kekasihmu ❤️</p>
+                    </div>
+                </div>
+                <button class="restart-btn" onclick="restart()">Baca Lagi ❤️</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Popups -->
+    <div class="open-popups-lightbox" id="lightbox1">
+        <div class="open-popups-content">
+            <div class="open-popups-image-container">
+                <img id="lightboxImage1" src="" alt="Memory Image">
+            </div>
+            <div class="open-popups-nav prev" data-lightbox="1">&#10094;</div>
+            <div class="open-popups-nav next" data-lightbox="1">&#10095;</div>
+            <div class="open-popups-close" data-lightbox="1">&times;</div>
+        </div>
+    </div>
+    <div class="open-popups-lightbox" id="lightbox2">
+        <div class="open-popups-content">
+            <div class="open-popups-image-container">
+                <img id="lightboxImage2" src="" alt="Memory Image">
+            </div>
+            <div class="open-popups-nav prev" data-lightbox="2">&#10094;</div>
+            <div class="open-popups-nav next" data-lightbox="2">&#10095;</div>
+            <div class="open-popups-close" data-lightbox="2">&times;</div>
+        </div>
+    </div>
+    <div class="open-popups-lightbox" id="lightbox3">
+        <div class="open-popups-content">
+            <div class="open-popups-image-container">
+                <img id="lightboxImage3" src="" alt="Memory Image">
+            </div>
+            <div class="open-popups-nav prev" data-lightbox="3">&#10094;</div>
+            <div class="open-popups-nav next" data-lightbox="3">&#10095;</div>
+            <div class="open-popups-close" data-lightbox="3">&times;</div>
+        </div>
+    </div>
+    <div class="open-popups-lightbox" id="lightbox4">
+        <div class="open-popups-content">
+            <div class="open-popups-image-container">
+                <img id="lightboxImage4" src="" alt="Memory Image">
+            </div>
+            <div class="open-popups-nav prev" data-lightbox="4">&#10094;</div>
+            <div class="open-popups-nav next" data-lightbox="4">&#10095;</div>
+            <div class="open-popups-close" data-lightbox="4">&times;</div>
+        </div>
+    </div>
+
+    <!-- Audio element for background music -->
+    <audio id="backgroundMusic" preload="auto">
+        <source src="music/romantic-song.mp3" type="audio/mpeg">
+        <source src="music/romantic-song.wav" type="audio/wav">
+        <!-- Fallback: you can replace this with your favorite romantic song -->
+    </audio>
+
+    <script src="script.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
